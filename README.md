@@ -11,9 +11,10 @@ It provides two functionalities:
 * Returning sum of all user repositorie's star. Invocation:
   * /rating?username=name
 
-For example [all repositories of user SzyMan1337](https://user-repositories-allegro.herokuapp.com/repositories?username=SzyMan1337). 
+For example all repositories of user SzyMan1337:
 * https://user-repositories-allegro.herokuapp.com/repositories?username=SzyMan1337
-Sum of user [SzyMan1337 repositorie's starSzyMan1337](https://user-repositories-allegro.herokuapp.com/rating?username=SzyMan1337). 
+
+Sum of user SzyMan1337 repositorie's starSzyMan1337: 
 * https://user-repositories-allegro.herokuapp.com/rating?username=SzyMan1337
 
 ## Technologie
