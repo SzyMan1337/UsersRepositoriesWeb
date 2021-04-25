@@ -6,10 +6,10 @@ The application is a solution for recruitment of internship at Allegro Summer eX
 ## Deployment
 Application is avaible at [Heroku](https://user-repositories-allegro.herokuapp.com/).
 It provides two functionalities:
-* Listing all user's repositories with number of stars. Invocation:
-** /repositories?username=name
+* Listing all user's repositories with number of stars. Invocation: 
+  * /repositories?username=name
 * Returning sum of all user repositorie's star. Invocation:
-** /rating?username=name
+  * /rating?username=name
 
 For example [all repositories of user SzyMan1337](https://user-repositories-allegro.herokuapp.com/repositories?username=SzyMan1337). 
 * https://user-repositories-allegro.herokuapp.com/repositories?username=SzyMan1337
