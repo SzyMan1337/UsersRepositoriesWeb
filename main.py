@@ -19,9 +19,12 @@ def rating(username: str = ""):
     count = 0
     for i in range(0,len(repo_json)):
         count += repo_json[i]['stargazers_count']
-    return {"Rating": count}
+    return {"rating": count}
 
 @app.get("/repositories")
 def list_repo(username: str = ""):
     repo_json = get_json_of_user(username)
-    return {f"repositories {username}"}
+    jss = {}
+    for i in range(0,len(repo_json)):
+        jss[repo_json[i]['name']] = repo_json[i]['stargazers_count']
+    return jss
