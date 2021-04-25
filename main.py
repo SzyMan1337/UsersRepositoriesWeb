@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def hello():
-    return {"List all user repositories with ratings": "/repositories/username", "Display sum of all user's repositories ratings":"/rating/username"}
+    return {"List all user repositories with ratings": "/repositories?username", "Display sum of all user's repositories ratings":"/rating?username"}
 
 def get_json_of_user(username):
     response = requests.get('https://api.github.com/users/'+username+'/repos')
