@@ -4,10 +4,14 @@ from pydantic import BaseModel
 app = FastAPI()
 
 @app.get("/")
-def read_root():
-    return {"userWWname","username/rate"}
+def hello():
+    return {"/rating/username","/repositories/username"}
 
 
-@app.get("/{username}")
-def read_root():
+@app.get("/rating")
+def rating(username: str = ""):
     return {"userWWname"}
+
+@app.get("/repositories")
+def list_repo(username: str = ""):
+    return {"repositories"}
